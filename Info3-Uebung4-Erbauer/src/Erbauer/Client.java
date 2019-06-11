@@ -12,6 +12,7 @@ public class Client {
 		
 		AbstractBike racer = racerBuilder.getResults();
 		System.out.println(racer.toString());
+		System.out.println("");
 		
 		//MOUNTAINBIKE
 		BikeBuilder mtnbikeBuilder = new MountainbikeBuilder();

@@ -31,10 +31,10 @@ public abstract class AbstractBike{
 	}
 	
 	public String toString() {
-		return this.name+" with a "+frame.getColor()+" frame that weights "+frame.getWeight()+"kg";
+		return this.name+" mit einem Rahmen in "+frame.getColor()+", der "+frame.getWeight()+"kg wiegt; Räder mit einem Durchmesser von "+tires.getDiameter()+" und einer Stärke von "+tires.getStrength()+"; Gangschältung mit "+gearShift.getGearCount()+" Gängen";
 	}
 	
 	public String getName() {
-		return this.getName();
+		return this.name;
 	}
 }

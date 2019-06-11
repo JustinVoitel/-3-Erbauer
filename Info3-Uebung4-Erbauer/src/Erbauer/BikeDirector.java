@@ -7,11 +7,18 @@ public class BikeDirector {
 	}
 	
 	public void construct() {
-		this.bikeBuilder.buildBike();
+		AbstractBike bike = this.bikeBuilder.buildBike();
+		System.out.println("Bauen eines "+bike.getName()+" angefangen");
 		
-		this.bikeBuilder.buildFrame();
-		this.bikeBuilder.buildTires();
-		this.bikeBuilder.buildGearShift();
+		IFrame frame = this.bikeBuilder.buildFrame();
+		System.out.println("Rahmen mit der Farbe "+frame.getColor()+" wurde montiert");
+		
+		ITire tires = this.bikeBuilder.buildTires();
+		System.out.println("Räder mit Stärke "+tires.getDiameter()+" wurde montiert");
+
+		IGearShift gear = this.bikeBuilder.buildGearShift();
+		System.out.println("Schaltung mit "+gear.getGearCount()+" Gängen wurde montiert");
+
 		
 	}
 	
