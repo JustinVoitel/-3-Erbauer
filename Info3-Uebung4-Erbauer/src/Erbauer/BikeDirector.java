@@ -1,10 +1,19 @@
 package Erbauer;
 
 public class BikeDirector {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private BikeBuilder bikeBuilder;
+	public BikeDirector(BikeBuilder bikeBuilder) {
+		this.bikeBuilder = bikeBuilder;
 	}
-
+	
+	public void construct() {
+		this.bikeBuilder.buildBike();
+		
+		this.bikeBuilder.buildFrame();
+		this.bikeBuilder.buildTires();
+		this.bikeBuilder.buildGearShift();
+		
+	}
+	
+	
 }
